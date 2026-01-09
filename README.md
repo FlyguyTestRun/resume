@@ -1,73 +1,145 @@
-# resume
-Please check out my resume work experience. Thanks! ~Bryan.
+# Bryan Shaw
+**Senior Systems Engineer | Microsoft Infrastructure | Automation & AI-Enabled Systems**
 
-# Bryan Shaw  
-**Senior Executive Assistant & IT Systems Consultant**  
-Keller, TX 76248 | 817.653.5656 | BryanJShaw@gmail.com  
-[LinkedIn](https://www.linkedin.com/in/bryan-shaw-45a23124/) | [GitHub](https://github.com/FlyguyTestRun/)
+Dallas–Fort Worth, TX  
+Email: BryanJShaw@gmail.com  
+LinkedIn: https://www.linkedin.com/in/bryan-shaw-45a23124/  
+GitHub: https://github.com/FlyguyTestRun/
 
 ---
 
-## Professional Summary  
-Dynamic IT leader and executive support professional with 17+ years of experience driving operational excellence through technology and organizational management. Proven expertise in design full-stack CRM systems, automating workflows, and supporting cross-functional teams for high-stakes operations across legal, home services, and educational sectors. Skilled in aligning technology with business goals, maintaining discretion with sensitive data, and delivering seamless executive support. Adept at managing complex schedules, coordinating projects, and leveraging tools like PowerShell, Python, Azure, and CRMs (Salesforce, HighLevel, Pipedrive) to optimize efficiency.
+## Professional Summary
+Systems Engineer and IT Consultant with **20 years of progressive experience** designing, administering, and modernizing enterprise systems, and high-impact support automation. My work  on transforming complex information ecosystems into secure, scalable solutions and AI-driven architectures that improve productivity, reduce redundancy and enhance decision making. 
+
+I design and implement multi-agent workflows that support diagnostics, guided troubleshooting, and knowledge retrieval for technical teams, leveraging both proprietary and open-source models. This includes building MCP-based architectures (local and Cloud), engingeering company-grounded knowledge bases, developing validated data ingestion pipelines, and delivering structured metadata strategies that improve response accuracy and system trust. These efforts transform raw operational data into governed, searchable knowledge systems embedded within enterprise support workflows. 
+
+At Trial IT Services, I have designed Microsoft environments across on-premises, hybrid, and cloud infrastructures. Experience in  Azure/Entra ID, Intune, Windows Server, virtualization, backup and recovery, and automation. Integrating AI-assisted systems, knowledge architectures, and automation frameworks to improve operational consistency, documentation quality, and decision support in enterprise and environments. I am recognized for technical leadership, system reliability, and disciplined execution in complex environments.
+
+---
+
+## Core Technical Competencies
+
+**Microsoft & Enterprise Infrastructure**  
+• Microsoft 365 (Exchange Online, SharePoint Online, Teams, OneDrive) 
+• Azure / Entra ID 
+• Intune & Autopilot 
+• Windows Server 2019 and 2012-2023 (on-prem and hybrid)
+• Active Directory Domain Services (ADDS)
+
+**Virtualization, Backup & Recovery**
+• VMware, Microsoft Hyper-V, Cloudshare for labs and instruction
+• Hyper-Converged Infrastructure (HCI)
+• Backup, disaster recovery, and system resilience planning
+
+**Automation & Scripting**  
+• PowerShell, Python (systems automation and integration)
+• Infrastructure automation and configuration enforcement
+• Identity lifecycle management 
+• Reporting, monitoring and operational visibility 
+
+**Cloud, DevOps & Integration**  
+• Azure SQL 
+• Azure App Services 
+• API Integrations 
+• Enterprise troubleshooting automation & diagnostics
+
+**Networking Fundamentals**  
+• TCP/IP, VLANs, DNS, DHCP, WLAN 
+• Cross-System Troubleshooting
+
+**AI, Knowledge Systems & Intelligent Automation**  
+• AI architecture & multi-agent system design
+• Knowledge engineering, metadata modeling, and enterprise taxonomy strategy
+• Retrieval architecture (semantic search, embeddings, vector databases)
+• Large Language Models (cloud-hosted and local)  
+• Large-scale data ingestion & verified-source pipelines
+• Knowledge graph structuring and governed knowledge systems
+• Secure AI-assisted automation using MCP-based server architectures
+
+## Technical Projects 
+
+**Enterprise Microsoft Lab & Virtual Machine Training Environments**  
+- Designed and operated VM-based enterprise lab environments simulating production Microsoft infrastructures, including Azure/Entra ID, Intune, Windows Server, Active Directory, and Microsoft 365.
+- Using Cloudshare for technical instruction, classroom training sessions, systems validation, automation testing, documentation development. 
+
+**Automation & Infrastructure Tooling**  
+- Developed PowerShell and Python tooling for identity provisioning, compliance checks, patching, reporting, and operational visibility, customised coding for business applications, System Imaging and containerzation. 
+- Implemented repeatable automation patterns aligned for classroom training modules.
+
+**AI-Enabled Knowledge & Automation Systems**  
+- Integrating cloud-based and local language models into secure technical workflows for documentation, analysis, and operational support.
+- Designed structured knowledge systems using vector databases to enable semantic search and context-aware retrieval.
+- Implemented agent-style workflows to assist with systems analysis, troubleshooting, configuration review, and procedural guidance.
+- Worked with orchestration and integration frameworks to connect AI capabilities with infrastructure, documentation repositories, and automation pipelines.
+
+**DevOps & Platform Engineering**  
+- Containerized services using Docker MCP servers for local development, testing, and controlled deployment for localized use.
+- Used GitHub for version control, documentation management, and automation workflows.
+
+---
+
+## Professional Experience
+
+### CoreSkills4ai – DFW, TX
+**AI Architect & Trainer** | June 2025 – Present
+- Designing modules for AI mastery and personal empowerment skills for individuals and organizations.
+- Focus on syllabus materials for hybrid design architecture. 
+- Beginner-friendly, hands-on training series from zero experience with GUI no-code, low-code interfaces to introduce low-code models into custom automated workflows. 
+
+- ### Trial IT Services, LLC – Dallas, TX
+**IT Consultant & Systems Engineer** | June 2013 – 2024
+- Designed and supported secure Microsoft-based infrastructures for legal, construction, and professional services clients.
+- Windows Server 2019 and Microsoft 2019 environments with integrated identity, access control, security baselines, and backup strategies.
+- Implemented automation using PowerShell and Python to reduce administrative overhead and enforce operational standards. 
+- Architected and implemented secure Microsoft server environments (Windows Server 2012/2019), integrating SQL, DNS, and email services 
+- Designed and implemented secure VPNs, firewalls, and proxy servers adhering to HIPAA-equivalent protocols, safeguarding sensitive trial data, server audits, deployments.
+
+### E&F Legal Production – Dallas–Fort Worth Metroplex
+**IT Systems Trial Technician** | 2008 – 2013
+- Network Architecture for secure Microsoft server environments (Windows Server 2012/2019), integrating SQL, DNS, and email servers for rapid deployment, enabling secure remote access and seamless interoperability for legal teams. WLAN for trial teams for print and file share servers. 
+- System Reliability: Conducted system audits and implemented robust backup and recovery processes, ensuring data integrity during high-stakes legal proceedings.  
+- Automated processes using PowerShell and Python scripts, streamlining data synchronization and system monitoring.  
+- Created detailed documentation and knowledgebases, mentoring teams on deployment, security, and backup procedures.  
+
+---
+
+## Education
+**Bachelor of Arts – Engineering & Business**  
+University of Texas at Arlington | December 2010
+Relevant Coursework: Computer Science, Data Management, Project Management, Structural Analysis, Engineering Principles
 
 ---
 
 ## Key Skills  
-- **Executive Support & Coordination**: Inbox management, scheduling, travel coordination, stakeholder communication, and project tracking for C-level executives.  
-- **CRM & Productivity Tools**: Proficient in Salesforce, HighLevel, Pipedrive, Creatio, MS 365, MS Teams, Trello, ServiceNow, Power BI, Zapier, and WordPress.  
-- **Data Management & Reporting**: Collecting and organizing KPIs, dashboards, and financial data; expertise in Azure SQL, data modeling, and analytics.  
+- **Executive Support & Coordination**: Inbox management, scheduling, travel coordination, stakeholder communication, and project tracking through Agentic AI Systems.  
+- **CRM & Productivity Tools**: Proficient in Pipeline Automations, Creatio, MS 365, MS Teams, Trello, ServiceNow, Power BI, Zapier, Glide and WordPress.  
+- **Data Management & Reporting**: Collecting and organizing KPIs, dashboards, and financial data; Azure SQL, data modeling, and analytics.  
 - **Automation & Scripting**: PowerShell and Python scripting for process automation, system monitoring, and CRM/ERP integrations.  
-- **Technical Proficiencies**: Windows Server (2012/2019/2022), Active Directory, Microsoft Entra ID, Azure, Intune, SSO, VPNs, firewalls, and HIPAA/FERPA compliance.  
-- **Project Management**: Leading small projects, coordinating with vendors/contractors, and ensuring deadlines are met with high attention to detail.  
 - **Communication**: Clear, professional written and verbal communication; adept at drafting responses and preparing executive summaries.  
-- **AI Tool Familiarity**: Experience with Salesforce Einstein Copilot, HubSpot AI CRM Builder, and MS Dynamics (Copilot).  
+- **AI Tools**: Salesforce, Einstein, Copilot, HubSpot AI CRM Builder, Glide, Cusor, Obsedian, Google Colab, Opus, Claude Coder, Ollama, LM Studio, VS Code  
 
 ---
 
-## Professional Experience  
-
-### Trial IT Services, LLC – Dallas, TX  
-**Senior Executive Assistant to Legal Partners ** | June 2022 – June 2023  
-- Provided high-level support to legal partners, managing communications, prioritizing inbox tasks, and drafting professional responses for 200+ legal teams nationwide.  
-- Coordinated schedules, meetings, and travel arrangements across multiple legal projects, ensuring seamless operations under tight deadlines.  
-- Maintained and updated CRM systems, organizing client pipelines and case data to support legal operations.  
-- Collected and organized KPIs and performance metrics, preparing dashboards for executive review to drive strategic decisions.  
-- Led small-scale projects, coordinating with vendors and stakeholders to ensure timely delivery of IT and operational solutions.  
-- Ensured discretion and compliance with HIPAA-equivalent protocols when handling sensitive trial data, maintaining zero data breaches.  
-
-**IT Consultant & Systems Architect** | June 2013 – Present  
-- Designed and implemented CRM/ERP solutions, customizing workflows to enhance efficiency for legal and corporate clients.  
-- Architected secure Microsoft server environments (Windows Server 2012/2019), integrating SQL, DNS, and email services for rapid deployment.  
-- Automated processes using PowerShell and Python scripts, streamlining data synchronization and system monitoring.  
-- Created detailed documentation and knowledgebases, mentoring teams on deployment, security, and backup procedures.  
+## Recent Consulting Experience  
 
 ### ProCo Roofing – Dallas, TX  
-**CPQ SLG CRM Consultant** | May 2025 – Present  
-- Led the design of a full-stack CRM solution with HighLevel and Salesforce, integrating APIs for quoting, analytics, and geospatial overlays, delivering an MVP in 5 weeks.  
-- Implemented Azure SQL database and Intune MDM for secure BYOD access, reducing software costs by 65-90% (rollout over Q1-2 2026) with a 3-month ROI replacing Saas with PaaS system.  
-- Conducted end-user training for 120 staff members, ensuring adoption of M365 and CRM applications.  
-- Cleaned and migrated customer data, improving accuracy and eliminating redundancies.  
+**CPQ SLG CRM Consultant** | April 2025 – Nov  
+- Design CRM solution integrating APIs for quoting, analytics, and geospatial overlays. 
+- Implemented Azure SQL database and Intune MDM for secure BYOD access.   
+- Cleaned and migrated database, for API integrations and RAG development, improving accuracy and eliminating redundancies.  
 
 ### H&H Construction – Burleson, TX  
 **CPQ SLG/PLG CRM Consultant** | July 2025 – Present  
-- Designed CRM workflows with API integrations for quoting and analytics, currently in project overview and cost analysis phase.  
-- Developed Python scripts to eliminate redundant data entries, optimizing data migration processes.  
-- Architected Azure/AWS database infrastructure to support scalable CRM operations.  
-
-### Texas Frozen Tech (Startup) – Dallas, TX  
-**CPQ SLG/PLG CRM Consultant** | April 2025 – Present  
-- Designed CRM workflows for real-time reordering and analytics, delivering an MVP trial application hosted on Azure in July 2025.  
-- Configured MS 365 and Intune for secure BYOD access, pending approval for cloud database implementation.  
+- Designed workflows with API integrations for quoting vendors and analytics.
+- Developed scripting logic reducing data redundancy, optimizing data migration into automated workflows.  
+- Architected database infrastructure for web-site AI Agentic Chat bot improving halluinations with RAG implementation.
 
 ---
 
 ## Certifications  
 - Microsoft 365 Certified: Endpoint Administrator  
 - Microsoft Certified: Azure Administrator  
-- Salesforce Certified: Administrator  
-- MCSA: Windows Server 2012, 2019, 2023  
-- Pursuing: Microsoft Certified: Administering Windows Server Hybrid Core Infrastructure (AZ-800/801), Azure Security (AZ-500), Salesforce CPQ Specialist  
+- MCSA: Windows Server 2012, 2019, 2023   
 
 ---
 
@@ -76,22 +148,4 @@ Dynamic IT leader and executive support professional with 17+ years of experienc
 University of Texas at Arlington | Graduated: December 2010  
 - Relevant Coursework: Computer Science, Data Management, Project Management, Structural Analysis, Engineering Principles  
 
----
 
-## Technical Projects  
-- **Azure & Intune Skill Development (Ongoing, 2025)**: Configured Azure AD for SSO and Intune MDM for device management, simulating HIPAA-compliant environments.  
-- **PowerShell & Python Automation**: Developed scripts for user provisioning, patch management, and CRM/ERP integrations, documented in a knowledgebase.  
-- **Salesforce CPQ Development**: Built CPQ-driven workflows with ERP integrations (e.g., NetSuite), preparing for Salesforce CPQ Specialist certification.  
-
----
-
-## Interests  
-- Building custom CRM applications with a focus on automation and user-centric design.  
-- Aviation (Instrument Rated Pilot).  
-- Finance & Financial Planning.  
-- Health & Fitness.  
-
----
-
-## Professional References  
-Apon Request.
