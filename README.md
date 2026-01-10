@@ -1,7 +1,7 @@
 # Bryan Shaw
 **Senior Systems Engineer | Microsoft Infrastructure | Automation & AI Systems**
 
-Dallas–Fort Worth, TX  
+Dallas–Fort Worth, Texas  
 Email: BryanJShaw@gmail.com  
 LinkedIn: https://www.linkedin.com/in/bryan-shaw-45a23124/  
 GitHub: https://github.com/FlyguyTestRun/

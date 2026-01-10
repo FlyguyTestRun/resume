@@ -9,7 +9,7 @@ Dallas–Fort Worth, TX
 ---
 
 ### Professional Summary
-Senior Systems Engineer and AI Architect with 20+ years of IT experience designing, administering, and modernizing Microsoft-centric enterprise environments, and building automation and AI-assisted support systems. Proven track record turning complex information ecosystems into secure, scalable architectures and AI-driven workflows that improve productivity, reduce redundancy, and enhance decision making.
+Senior Systems Engineer applying AI Architect with 20+ years of IT experience designing, administering, and modernizing Microsoft-centric enterprise environments, and building automation and AI-assisted support systems. Proven track record turning complex information ecosystems into secure, scalable architectures and AI-driven workflows that improve productivity, reduce redundancy, and enhance decision making.
 
 Designs and implements multi-agent systems (local and cloud) for diagnostics, guided troubleshooting, and knowledge retrieval, integrating proprietary and open-source language models. Builds validated data ingestion pipelines, governed knowledge bases, and metadata strategies that convert operational data into searchable, trustworthy knowledge embedded in enterprise support workflows.
 
