@@ -43,9 +43,6 @@ Extensive experience with Microsoft 365, Azure/Entra ID, Intune, Windows Servers
 • VMware, Microsoft Hyper-V, Cloudshare (lab and training environment)
 
 ​
-• Hyper-converged infrastructure (HCI - planning and deployment)
-
-​
 • Backup, disaster recovery, and business continuity planning​
 
 
