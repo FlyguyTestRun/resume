@@ -48,11 +48,17 @@ Extensive experience with Microsoft 365, Azure/Entra ID, Intune, Windows Servers
 
 **AI, Knowledge Systems & Intelligent Automation**  
 • AI architecture & multi-agent system design for operations
+
 • Knowledge engineering, metadata modeling, and enterprise taxonomy design
+
 • Retrieval architecture (semantic search, embeddings, vector databases)
+
 • Large Language Models (cloud-hosted and local) for support and documentation 
+
 • Data ingestion and verified-source pipelines for RAG and knowledge systems
+
 • Knowledge graphs and governed knowledge repositories for technical teams
+
 • Secure AI-assisted automation using MCP-based server architectures
 
 ## Technical Projects 
