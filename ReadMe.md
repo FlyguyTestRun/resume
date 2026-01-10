@@ -99,7 +99,7 @@ Extensive experience with Microsoft 365, Azure/Entra ID, Intune, Windows Servers
 • Designed network architecture for secure Microsoft server environments (Windows Server 2012) integrating SQL, DNS, and email for rapid deployment and secure remote access for trial teams.  
 • Conducted system audits and implemented backup and recovery processes to ensure data integrity during high-stakes legal proceedings.  
 • Streamlining data synchronization and system monitoring.  
-• Produced detailed documentation and knowledge bases, mentoring teams on deployment, security, and backup procedures for trial environments.  
+• Produced detailed documentation, graphic design in Photoshop and variable printing for Trial Exhibits and knowledge bases, mentoring teams on deployment, security, and backup procedures for trial environments.  
 
 ---
 
@@ -122,7 +122,7 @@ Extensive experience with Microsoft 365, Azure/Entra ID, Intune, Windows Servers
 ### Key Skills
 
 - **Executive Support & Coordination**: Inbox management, scheduling, travel coordination, stakeholder communication, and project tracking using AI-assisted systems.  
-- **CRM & Productivity Tools**: Pipeline Automations, Creatio, Microsoft 365, Teams, Trello, ServiceNow, Power BI, Zapier, Glide, WordPress.  
+- **CRM & Productivity Tools**: Pipeline Automations, Creatio, Microsoft 365, Teams, Trello, ServiceNow, Power BI, Zapier, Glide, WordPress, Adobe Creative Suite 
 - **Data Management & Reporting**: KPI collection, dashboards, financial data organization, Azure SQL, data modeling, and analytics.  
 - **Automation & Scripting**: PowerShell and Python for process automation, monitoring, and CRM/ERP integrations.  
 - **Communication**: Clear, professional written and verbal communication; drafting responses, documenting procedures, and preparing executive summaries.  
