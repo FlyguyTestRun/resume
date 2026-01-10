@@ -2,9 +2,9 @@
 **Senior Systems Engineer | Microsoft Infrastructure | Automation & AI Systems**
 
 Dallas–Fort Worth, TX  
-📧 [BryanJShaw@gmail.com] (mailto:BryanJShaw@gmail.com)  
-🔗 [LinkedIn] (https://www.linkedin.com/in/bryan-shaw-45a23124/)  
-🐱‍💻 [GitHub] (https://github.com/FlyguyTestRun/)
+📧 [BryanJShaw@gmail.com](mailto:BryanJShaw@gmail.com)  
+🔗 [LinkedIn](https://www.linkedin.com/in/bryan-shaw-45a23124/)  
+🐱‍💻 [GitHub](https://github.com/FlyguyTestRun/)
 
 ---
 
