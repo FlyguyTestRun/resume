@@ -103,22 +103,6 @@ Extensive experience with Microsoft 365, Azure/Entra ID, Intune, Windows Servers
 
 ---
 
-### Recent Consulting Projects
-
-**ProCo Roofing – Dallas, TX**  
-**CPQ / CRM Consultant** | April 2025 – Nov 2025  
-• Designed a CRM solutions integrating external APIs for quoting, analytics, and geospatial overlays to support field sales operations. Reduced admin time ~ 30%  
-• Implemented Azure SQL and Intune MDM to enable secure BYOD access to CRM data and tools.  
-• Cleaned and migrated CRM data to support API integrations and RAG development, improving accuracy and reducing redundancy.  
-
-**H&H Construction – Burleson, TX**  
-**CPQ / CRM Consultant** | July 2025 – Present  
-• Designed quoting and vendor workflows with API integrations to streamline bids, approvals, and analytics.  
-• Developed scripting logic to reduce data redundancy and optimize migration into automated CRM workflows.  
-• Architected database infrastructure for a website Marketing AI chatbot, improving hallucination control with RAG and governed context sources.  
-
----
-
 ### Key Skills
 
 - **Executive Support & Coordination**: Inbox management, scheduling, travel coordination, stakeholder communication, and project tracking using AI-assisted systems.  
@@ -127,14 +111,6 @@ Extensive experience with Microsoft 365, Azure/Entra ID, Intune, Windows Servers
 - **Automation & Scripting**: PowerShell and Python for process automation, monitoring, and CRM/ERP integrations.  
 - **Communication**: Clear, professional written and verbal communication; drafting responses, documenting procedures, and preparing executive summaries.  
 - **AI Tools**: Salesforce Einstein, Microsoft Copilot, HubSpot AI Builder, Glide, Cursor, Obsidian, Google Colab, Opus, Claude, Ollama, LM Studio, VS Code.  
-
----
-
-### Certifications
-
-• Microsoft 365 Certified: Endpoint Administrator  
-• Microsoft Certified: Azure Administrator  
-• MCSA: Windows Server 2012, 2019, 2023  
 
 ---
 
