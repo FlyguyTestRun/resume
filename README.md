@@ -146,9 +146,9 @@ Extensive experience with Microsoft 365, Azure/Entra ID, Intune, Windows Servers
 
 ---
 
-### Recent Consulting Projects  
+## Recent Consulting Projects  
 
-## ProCo Roofing – Dallas, TX  
+### ProCo Roofing – Dallas, TX  
 **CPQ / CRM Consultant** | April 2025 – Nov 2025 
 
 • Designed a CRM solutions integrating external APIs for quoting, analytics, and geospatial overlays to support field sales operations. Reduced admin time ~ 30%
