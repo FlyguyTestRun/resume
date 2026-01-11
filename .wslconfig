@@ -1,0 +1,5 @@
+[wsl2]
+memory=4GB        # Safe for your 12GB total
+processors=2      # Half your logical cores
+swap=2GB
+localhostForwarding=true
