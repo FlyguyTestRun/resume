@@ -1,0 +1,286 @@
+# ============================================================================
+# HEALING-VAULT / COUNCIL OF FRIENDS - DOCKER COMPOSE CONFIGURATION
+# ============================================================================
+# This configuration defines a multi-service application for your 
+# Healing-Vault project with best practices for production environments.
+#
+# ARCHITECTURE OVERVIEW:
+# - Frontend: Web application service (React/Vue/etc)
+# - Backend API: Python/Node.js application server
+# - Database: PostgreSQL for persistent storage
+# - Cache: Redis for session management and caching
+# - Message Queue: Optional RabbitMQ for async processing
+#
+# USAGE:
+#   Development: docker compose up --watch
+#   Production:  docker compose up -d
+#   Rebuild:     docker compose up --build
+#   Stop:        docker compose down
+# ============================================================================
+
+# Optional: Include infrastructure services in separate file
+# include:
+#   - infra.yaml
+
+services:
+  # ==========================================================================
+  # FRONTEND SERVICE - Web Application
+  # ==========================================================================
+  frontend:
+    container_name: healing_vault_frontend
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+      - REACT_APP_API_URL=http://backend:5000
+    volumes:
+      # Mount source code for hot-reload during development
+      - ./frontend:/app
+      - /app/node_modules  # Prevent overwriting node_modules
+    depends_on:
+      - backend
+    networks:
+      - healing_vault_network
+    restart: unless-stopped
+    
+    # Compose Watch for automatic file sync during development
+    develop:
+      watch:
+        - action: sync
+          path: ./frontend/src
+          target: /app/src
+        - action: rebuild
+          path: ./frontend/package.json
+
+  # ==========================================================================
+  # BACKEND API SERVICE - Application Server
+  # ==========================================================================
+  backend:
+    container_name: healing_vault_backend
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      # Application Configuration
+      - FLASK_APP=app.py
+      - FLASK_ENV=development
+      - FLASK_DEBUG=1
+      
+      # Database Configuration
+      - DATABASE_URL=postgresql://healing_user:secure_password@postgres:5432/healing_vault_db
+      
+      # Redis Configuration
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      
+      # Security & Session
+      - SECRET_KEY=your-secret-key-change-in-production
+      - JWT_SECRET_KEY=your-jwt-secret-change-in-production
+      
+      # CORS Settings
+      - ALLOWED_ORIGINS=http://localhost:3000,http://frontend:3000
+    volumes:
+      # Mount application code for development
+      - ./backend:/app
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    networks:
+      - healing_vault_network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    
+    # Compose Watch for automatic code updates
+    develop:
+      watch:
+        - action: sync
+          path: ./backend
+          target: /app
+          ignore:
+            - __pycache__/
+            - "*.pyc"
+
+  # ==========================================================================
+  # DATABASE SERVICE - PostgreSQL
+  # ==========================================================================
+  postgres:
+    container_name: healing_vault_postgres
+    image: postgres:16-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=healing_user
+      - POSTGRES_PASSWORD=secure_password
+      - POSTGRES_DB=healing_vault_db
+      - POSTGRES_INITDB_ARGS=--encoding=UTF-8
+    volumes:
+      # Persist database data
+      - postgres_data:/var/lib/postgresql/data
+      
+      # Optional: Initialize database with schema
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    networks:
+      - healing_vault_network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U healing_user -d healing_vault_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ==========================================================================
+  # CACHE SERVICE - Redis
+  # ==========================================================================
+  redis:
+    container_name: healing_vault_redis
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    command: redis-server --appendonly yes --requirepass redis_password
+    volumes:
+      # Persist Redis data
+      - redis_data:/data
+    networks:
+      - healing_vault_network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "--raw", "incr", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+  # ==========================================================================
+  # OPTIONAL: MESSAGE QUEUE - RabbitMQ
+  # ==========================================================================
+  # Uncomment if you need async task processing or event-driven architecture
+  # rabbitmq:
+  #   container_name: healing_vault_rabbitmq
+  #   image: rabbitmq:3-management-alpine
+  #   ports:
+  #     - "5672:5672"    # AMQP port
+  #     - "15672:15672"  # Management UI
+  #   environment:
+  #     - RABBITMQ_DEFAULT_USER=healing_user
+  #     - RABBITMQ_DEFAULT_PASS=rabbitmq_password
+  #   volumes:
+  #     - rabbitmq_data:/var/lib/rabbitmq
+  #   networks:
+  #     - healing_vault_network
+  #   restart: unless-stopped
+
+  # ==========================================================================
+  # OPTIONAL: WORKER SERVICE - Background Task Processor
+  # ==========================================================================
+  # Uncomment for background jobs (email, notifications, data processing)
+  # worker:
+  #   container_name: healing_vault_worker
+  #   build:
+  #     context: ./backend
+  #     dockerfile: Dockerfile.worker
+  #   environment:
+  #     - DATABASE_URL=postgresql://healing_user:secure_password@postgres:5432/healing_vault_db
+  #     - REDIS_HOST=redis
+  #     - REDIS_PORT=6379
+  #     - RABBITMQ_URL=amqp://healing_user:rabbitmq_password@rabbitmq:5672/
+  #   depends_on:
+  #     - postgres
+  #     - redis
+  #     - rabbitmq
+  #   networks:
+  #     - healing_vault_network
+  #   restart: unless-stopped
+
+  # ==========================================================================
+  # OPTIONAL: REVERSE PROXY - Nginx
+  # ==========================================================================
+  # Uncomment for production deployment with SSL/TLS
+  # nginx:
+  #   container_name: healing_vault_nginx
+  #   image: nginx:alpine
+  #   ports:
+  #     - "80:80"
+  #     - "443:443"
+  #   volumes:
+  #     - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+  #     - ./nginx/ssl:/etc/nginx/ssl:ro
+  #   depends_on:
+  #     - frontend
+  #     - backend
+  #   networks:
+  #     - healing_vault_network
+  #   restart: unless-stopped
+
+# ============================================================================
+# NETWORKS
+# ============================================================================
+# Isolated network for inter-service communication
+networks:
+  healing_vault_network:
+    driver: bridge
+    name: healing_vault_network
+
+# ============================================================================
+# VOLUMES
+# ============================================================================
+# Persistent storage for database and cache
+volumes:
+  postgres_data:
+    name: healing_vault_postgres_data
+    driver: local
+  
+  redis_data:
+    name: healing_vault_redis_data
+    driver: local
+  
+  # Uncomment if using RabbitMQ
+  # rabbitmq_data:
+  #   name: healing_vault_rabbitmq_data
+  #   driver: local
+
+# ============================================================================
+# PRODUCTION DEPLOYMENT NOTES
+# ============================================================================
+# 
+# 1. ENVIRONMENT VARIABLES:
+#    - Create .env file with production credentials
+#    - Never commit secrets to version control
+#    - Use Docker secrets or external secret management
+#
+# 2. SECURITY:
+#    - Change all default passwords
+#    - Use strong SECRET_KEY and JWT_SECRET_KEY
+#    - Enable HTTPS with SSL certificates
+#    - Implement rate limiting
+#    - Use environment-specific configurations
+#
+# 3. SCALABILITY:
+#    - Use docker compose --scale for horizontal scaling
+#    - Configure load balancer (nginx/traefik)
+#    - Use managed database services in production
+#    - Implement caching strategies
+#
+# 4. MONITORING & LOGGING:
+#    - Add logging drivers (json-file, syslog, etc.)
+#    - Integrate with monitoring tools (Prometheus, Grafana)
+#    - Set up log aggregation (ELK stack, CloudWatch)
+#    - Configure health checks and alerts
+#
+# 5. BACKUP & RECOVERY:
+#    - Schedule regular database backups
+#    - Test restore procedures
+#    - Use volume backup solutions
+#    - Implement disaster recovery plan
+#
+# ============================================================================
