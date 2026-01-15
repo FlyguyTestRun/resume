@@ -119,7 +119,7 @@ Proven track record translating complex infrastructure, identity, and operationa
 ---
 
 ## Additional Skills & Tooling
-- **AI & Automation Tools:** OpenAI-style platforms, Copilot-style systems, LangChain-style orchestration concepts, Claude, Ollama, LM Studio, Cursor, VS Code, Obsidian
+- **AI & Automation Tools:** OpenAI-style platforms, Copilot-style systems, LangChain-style orchestration concepts, Claude, Ollama, LM Studio, Cursor, VS Code, Obsidian, Pinecone
 - **Data & Observability:** Grafana, Prometheus, KPI dashboards, structured reporting, analytics
 - **Productivity & Platforms:** Microsoft 365, ServiceNow, Power BI, Trello, Zapier, Glide, WordPress
 - **CRM & Business Tools:** Pipeline Automations, Creatio, HubSpot AI Builder
