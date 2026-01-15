@@ -11,7 +11,7 @@
 
 ## Professional Summary
 
-Senior AI Architect–Engineer with 20+ years of enterprise technology experience designing, operating, and modernizing secure Microsoft infrastructures. Focsed on building production-grade Generative AI platforms, RAG systems, and agentic workflows for real-world enterprise use.
+Senior AI Architect–Engineer with 20+ years of enterprise technology experience designing, operating, and modernizing secure Microsoft infrastructures. Focused on building production-grade Generative AI platforms, RAG systems, and agentic workflows for real-world enterprise use.
 
 Bridges enterprise architecture leadership with hands-on engineering execution, delivering end-to-end AI systems including LLM orchestration, retrieval pipelines, agent frameworks, observability, and governance. Designs reusable reference architectures that balance scalability, security, cost control, and responsible AI guardrails in regulated environments.
 
